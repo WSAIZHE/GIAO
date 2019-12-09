@@ -1,0 +1,14 @@
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\WS.EF.ScoreDAL.dll.config
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\WS.EF.ScoreDAL.dll
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\WS.EF.ScoreDAL.pdb
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\EntityFramework.dll
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\EntityFramework.xml
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\obj\Debug\WS.EF.ScoreDAL.csproj.CoreCompileInputs.cache
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\obj\Debug\WS.EF.ScoreDAL.csproj.CopyComplete
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\obj\Debug\WS.EF.ScoreDAL.dll
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\obj\Debug\WS.EF.ScoreDAL.pdb
+C:\Users\18539\Desktop\WS.MVC.ScoreWeb\WS.EF.ScoreDAL\obj\Debug\WS.EF.ScoreDAL.csprojAssemblyReference.cache

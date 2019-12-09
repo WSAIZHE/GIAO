@@ -1,0 +1,247 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCAFE2AB-A19A-49D2-992B-3D007D3B6BFD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WS.MVC.ScoreWeb</RootNamespace>
+    <AssemblyName>WS.MVC.ScoreWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\paper-bootstrap-wizard.css" />
+    <Content Include="assets\css\themify-icons-demo.css" />
+    <Content Include="assets\css\themify-icons.css" />
+    <Content Include="assets\fonts\themify.svg" />
+    <Content Include="assets\img\apple-icon.png" />
+    <Content Include="assets\img\default-avatar.jpg" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\new_logo.png" />
+    <Content Include="assets\img\paper-1.jpeg" />
+    <Content Include="assets\img\paper-2.jpeg" />
+    <Content Include="assets\img\paper-3.jpeg" />
+    <Content Include="assets\img\thumb_list_boat.png" />
+    <Content Include="assets\img\thumb_list_place.png" />
+    <Content Include="assets\img\thumb_register.png" />
+    <Content Include="assets\img\tim_80x80.png" />
+    <Content Include="assets\img\wizard-boat.jpg" />
+    <Content Include="assets\img\wizard-city.jpg" />
+    <Content Include="assets\img\wizard.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\jquery-2.2.4.min.js" />
+    <Content Include="assets\js\jquery.bootstrap.wizard.js" />
+    <Content Include="assets\js\jquery.validate.min.js" />
+    <Content Include="assets\js\paper-bootstrap-wizard.js" />
+    <Content Include="documentation\css\documentation.css" />
+    <Content Include="documentation\elements.html" />
+    <Content Include="documentation\themify-icons.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Score.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\._changelog.txt" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\css\._paper-bootstrap-wizard.css" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\js\._paper-bootstrap-wizard.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CompanyInfoController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Score.aspx.cs">
+      <DependentUpon>Score.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Score.aspx.designer.cs">
+      <DependentUpon>Score.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="assets\.DS_Store" />
+    <Content Include="assets\css\.DS_Store" />
+    <Content Include="assets\fonts\themify.eot" />
+    <Content Include="assets\fonts\themify.ttf" />
+    <Content Include="assets\fonts\themify.woff" />
+    <Content Include="assets\img\.DS_Store" />
+    <Content Include="assets\js\.DS_Store" />
+    <Content Include="assets\scss\.DS_Store" />
+    <Content Include="assets\scss\paper-bootstrap-wizard.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\mixins\_buttons.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\mixins\_inputs.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\mixins\_labels.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\mixins\_transparency.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_buttons.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_card.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_footers.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_inputs.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_labels-progress-bar.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_misc.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_mixins.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_navs-pagination.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_responsive.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_tooltips.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_typography.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_variables.scss" />
+    <Content Include="assets\scss\paper-bootstrap-wizard\_wizard-card.scss" />
+    <None Include="packages.config" />
+    <Content Include="Views\CompanyInfo\CompanyInfo.cshtml" />
+    <Content Include="Views\_Layout.cshtml" />
+    <Content Include="Views\CompanyInfo\AddCompanyInfo.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="__MACOSX\._paper-bootstrap-wizard-v1.0.2" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\._.DS_Store" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\._.DS_Store" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\css\._.DS_Store" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\img\._.DS_Store" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\js\._.DS_Store" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\scss\._.DS_Store" />
+    <Content Include="__MACOSX\paper-bootstrap-wizard-v1.0.2\assets\scss\._paper-bootstrap-wizard.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WS.EF.ScoreDAL\WS.EF.ScoreDAL.csproj">
+      <Project>{A6E9FEF5-9528-423E-A72C-149EE82C100D}</Project>
+      <Name>WS.EF.ScoreDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54547</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54547/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
